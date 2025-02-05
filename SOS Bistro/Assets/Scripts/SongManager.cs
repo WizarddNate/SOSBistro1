@@ -10,9 +10,15 @@ public class SongManager : MonoBehaviour
     public static SongManager Instance;
     public AudioSource audioSource;
 
+    //array of lanes
+    public Lane[] lanes;
+
     //delay our song after a certain time
     public float songDelayInSeconds;
     public int inputDelayInMilliseconds;
+
+    //margin of error in seconds
+    public double magrinOfError; 
 
     //name for where the MIDI file is kept
     public string fileLoctation;
@@ -40,8 +46,9 @@ public class SongManager : MonoBehaviour
     {
         Instance = this;
 
+        //!!! REMEMBER THIS !!!
         //read Midi file.. this might not work because i put the file in a different spot from the tutorial
-        midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLoctation);
+        midiFile = MidiFile.Read("Assets/Audio/" + fileLoctation);
     }
 
     
@@ -54,23 +61,25 @@ public class SongManager : MonoBehaviour
     {
         //get notes from file
         var notes = midiFile.GetNotes();
-
         //make into array
         var notesArray = new Melanchall.DryWetMidi.Interaction.Note[notes.Count];
-
         //copy notes into above array. Not sure why it doesn't work!
         notes.CopyTo(notesArray, 0);
 
+        //filter out each time that we need for each lane (I think)
+        foreach (var lane in lanes) lane.SetTimestamps(notesArray);
 
         //delay song so it doesn't start right away. Will come back to this later
         Invoke(nameof(StartSong), songDelayInSeconds);
-        {
-            audioSource.Play();
-        }
     }
 
     public void StartSong()
     {
+        
+    }
 
+    public static double GetAudioSourceTime()
+    {
+        return (double)Instance.audioSource.timeSamples / Instance.audioSource.clip.frequency;
     }
 }
