@@ -26,15 +26,10 @@ public class Lane : MonoBehaviour
     int spawnIndex = 0;
     int inputIndex = 0;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] array)
+    public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] notesArray)
     {
-        foreach (var note in array)
+        foreach (var note in notesArray)
         {
             if (note.NoteName == noteRestriction)
             {
@@ -52,6 +47,7 @@ public class Lane : MonoBehaviour
             //checking to see if it's time for a note to spawn
             if (SongManager.GetAudioSourceTime() >= timestamps[spawnIndex] - SongManager.Instance.noteTime)
             {
+                //create note
                 var note = Instantiate(notePrefab, transform);
                 notes.Add(note.GetComponent<Note>());
 
@@ -83,13 +79,12 @@ public class Lane : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Hit inaccurate");
+                    Debug.Log($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timestamp)} delay");
                 }
             }
             if (timestamp + marginOfError <= audioTime)
             {
                 Miss();
-                
                 inputIndex++;
             }
         }
@@ -97,13 +92,13 @@ public class Lane : MonoBehaviour
 
     private void Hit()
     {
-        Debug.Log("Hit!");
+        Debug.Log($"Hit on {inputIndex} note");
         ScoreManager.Hit();
     }
 
     private void Miss()
     {
-        Debug.Log("Lol you missed asshole");
+        Debug.Log("Missed {inputIndex} note");
         ScoreManager.Miss();
     }
 

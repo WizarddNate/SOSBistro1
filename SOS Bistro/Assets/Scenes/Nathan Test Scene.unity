@@ -193,8 +193,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6ce790a99c7dd5e45a1602a04fb518b4, type: 3}
-  m_Resource: {fileID: 8300000, guid: 6ce790a99c7dd5e45a1602a04fb518b4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a667a87f378bec14e9b8b2be1d8b283f, type: 3}
+  m_Resource: {fileID: 8300000, guid: a667a87f378bec14e9b8b2be1d8b283f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -962,8 +962,8 @@ MonoBehaviour:
   - {fileID: 844809372}
   songDelayInSeconds: 0
   inputDelayInMilliseconds: 0
-  magrinOfError: 0.1
-  fileLoctation: ah
+  magrinOfError: 0.07
+  fileLocation: Testing.mid
   noteTime: 1
   noteSpawnY: 7
   noteTapY: -2
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b677e454069066c40a473e2df01661ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteRestriction: 5
+  noteRestriction: 1
   input: 276
   notePrefab: {fileID: 6483462832547997574, guid: d323fded5861417408f32f7cfac967fa, type: 3}
 --- !u!4 &1680940464
@@ -1139,6 +1139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSFX: {fileID: 844440020}
   missSFX: {fileID: 18144505}
+  scoreText: {fileID: 0}
 --- !u!4 &2003781914
 Transform:
   m_ObjectHideFlags: 0

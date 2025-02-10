@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Note : MonoBehaviour
@@ -25,7 +27,8 @@ public class Note : MonoBehaviour
         }
         else
         {
-            transform.localPosition = Vector2.Lerp(Vector3.up * SongManager.Instance.noteSpawnY, Vector3.up * SongManager.Instance.noteDespawnY, t);
+            transform.localPosition = Vector3.Lerp(Vector3.up * SongManager.Instance.noteSpawnY, Vector3.up * SongManager.Instance.noteDespawnY, t);
+            GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 }

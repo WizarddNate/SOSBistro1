@@ -6,12 +6,12 @@ public class ScoreManager : MonoBehaviour
 {
 
     public static ScoreManager Instance;
-
     public AudioSource hitSFX;
     public AudioSource missSFX;
 
-    //display score
-    //public TMPro.TextMeshPro scoreText;
+    //display score. This doesnt work for some reason
+    public TMPro.TextMeshPro scoreText;
+
     static int comboScore;
 
 
@@ -24,14 +24,14 @@ public class ScoreManager : MonoBehaviour
 
     public static void Hit()
     {
-        Instance.hitSFX.Play();
         comboScore += 1;
+        Instance.hitSFX.Play();
     }
 
     public static void Miss()
     {
-        Instance.missSFX.Play();
         comboScore = 0;
+        Instance.missSFX.Play();
     }
 
     private void Update()
