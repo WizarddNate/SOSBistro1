@@ -45,10 +45,10 @@ public class Lane : MonoBehaviour
         if (spawnIndex < timestamps.Count)
         {
             //checking to see if it's time for a note to spawn
-            if (SongManager.GetAudioSourceTime() >= timestamps[spawnIndex] - SongManager.Instance.noteTime)
+            if (SongManager.GetAudioSourceTime() + SongManager.Instance.midiOffset >= timestamps[spawnIndex] - SongManager.Instance.noteTime)
             {
                 //create note
-                var note = Instantiate(notePrefab, transform);
+                var note = Instantiate(notePrefab, new Vector3 (0, SongManager.Instance.noteSpawnY, 0), Quaternion.identity, transform);
                 notes.Add(note.GetComponent<Note>());
 
                 //assign tap time to note
@@ -63,19 +63,22 @@ public class Lane : MonoBehaviour
             //variables to simplify code 
             double timestamp = timestamps[inputIndex];
             double marginOfError = SongManager.Instance.magrinOfError;
-            double audioTime = SongManager.GetAudioSourceTime() - (SongManager.Instance.inputDelayInMilliseconds / 1000.0);
+            double audioTime = SongManager.GetAudioSourceTime() + SongManager.Instance.midiOffset - (SongManager.Instance.inputDelayInMilliseconds / 1000.0);
 
-            //check if player hit the note
-            if (Input.GetKeyDown(input))
+            //check if player hit the note, and if a note exists in the scene 
+            if (Input.GetKeyDown(input) && notes.Count > inputIndex)
             {
                 //check if player hit within margin of error
-                if (Math.Abs(audioTime - timestamp) > marginOfError)
+                if (Math.Abs(audioTime - timestamp) < marginOfError)
                 {
                     //hit that note!!!
                     Hit();
+                    //Debug.Log($"Input index: {inputIndex}");
+
                     //destory note
                     Destroy(notes[inputIndex].gameObject);
                     inputIndex++;
+                    return;
                 }
                 else
                 {
@@ -92,13 +95,13 @@ public class Lane : MonoBehaviour
 
     private void Hit()
     {
-        Debug.Log($"Hit on {inputIndex} note");
+        //Debug.Log($"Hit on {inputIndex} note");
         ScoreManager.Hit();
     }
 
     private void Miss()
     {
-        Debug.Log("Missed {inputIndex} note");
+        Debug.Log($"Missed {inputIndex} note in lane {name}");
         ScoreManager.Miss();
     }
 

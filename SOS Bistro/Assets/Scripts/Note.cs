@@ -9,19 +9,18 @@ public class Note : MonoBehaviour
     //time that the note needs to be played by the player
     public float assignedTime;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         timeInstantiated = SongManager.GetAudioSourceTime();
     }
 
-    // Update is called once per frame
     void Update()
     {
         double timeSinceInstantiated = SongManager.GetAudioSourceTime() - timeInstantiated;
         float t = (float)(timeSinceInstantiated / (SongManager.Instance.noteTime * 2));
+        t = Mathf.Clamp01(t);
 
-        if (t > 1)
+        if (t >= 1)
         {
             Destroy(gameObject);
         }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     public AudioSource missSFX;
 
     //display score. This doesnt work for some reason
-    public TMPro.TextMeshPro scoreText;
+    public TMP_Text scoreText;
 
     static int comboScore;
 
@@ -36,7 +37,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        //scoreText.text = comboScore.ToString();
+        scoreText.text = comboScore.ToString();
     }
 
 }

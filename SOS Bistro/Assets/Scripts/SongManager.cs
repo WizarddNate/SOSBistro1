@@ -44,23 +44,37 @@ public class SongManager : MonoBehaviour
         }
     }
 
+    //offset for when the note spawns
+    [Tooltip("offset for when the note spawns")]
+    public double midiOffset;
+
     //where MIDI will load once parsed
     public static MidiFile midiFile;
 
-    void Start()
+    void Awake()
     {
         Instance = this;
+    }
+
+    void Start()
+    {
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
     }
 
+    void Update()
+    {
+        //Debug.Log("hi");
+    }
 
     public void GetDataFromMidi()
     {
         //get notes from file
+
         var notes = midiFile.GetNotes();
         //make into array
         var notesArray = new Melanchall.DryWetMidi.Interaction.Note[notes.Count];
+
         //copy notes into above array. 
         notes.CopyTo(notesArray, 0);
 
