@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab38f53349d904b4db77bd39c6e03eec
+guid: 28e62156d7590a046aeaaa6b7e188232
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6344797138828892452
-    second: TreeLarge1_0
+      213: 4966648748027138055
+    second: Track_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TreeLarge1_0
+      name: Track_0
       rect:
         serializedVersion: 2
-        x: 103
-        y: 372
-        width: 532
-        height: 595
+        x: 29
+        y: 0
+        width: 1160
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4299fcfa16f3d0850800000000000000
-      internalID: 6344797138828892452
+      spriteID: 700db4ec8b41de440800000000000000
+      internalID: 4966648748027138055
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      TreeLarge1_0: 6344797138828892452
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
