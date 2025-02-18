@@ -22,6 +22,9 @@ public class Lane : MonoBehaviour
     //list for when the player needs to give an input
     List<double> timestamps = new List<double>();
 
+    //unique hit sfx for each lane
+    public AudioSource hitSFX;
+
     //just helps keep track of things
     int spawnIndex = 0;
     int inputIndex = 0;
@@ -96,6 +99,7 @@ public class Lane : MonoBehaviour
     private void Hit()
     {
         //Debug.Log($"Hit on {inputIndex} note");
+        hitSFX.Play();
         ScoreManager.Hit();
     }
 
