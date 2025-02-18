@@ -103,8 +103,8 @@ TextureImporter:
       name: Cat_0
       rect:
         serializedVersion: 2
-        x: 704
-        y: 192
+        x: 0
+        y: 11
         width: 564
         height: 759
       alignment: 0
