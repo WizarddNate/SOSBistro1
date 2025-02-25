@@ -58,6 +58,11 @@ public class Lane : MonoBehaviour
                 note.GetComponent<Note>().assignedTime = (float)timestamps[spawnIndex];
                 spawnIndex++;
             }
+        //detect when song has ended 
+        if (spawnIndex >= timestamps.Count)
+            {
+                Debug.Log("Song Complete!");
+            }
         }
 
         //inputs
