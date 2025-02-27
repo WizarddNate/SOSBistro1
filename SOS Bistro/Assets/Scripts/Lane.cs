@@ -29,6 +29,9 @@ public class Lane : MonoBehaviour
     int spawnIndex = 0;
     int inputIndex = 0;
 
+    //animate kitty cat
+    public Animator animator;
+
 
     public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] notesArray)
     {
@@ -105,6 +108,7 @@ public class Lane : MonoBehaviour
     {
         //Debug.Log($"Hit on {inputIndex} note");
         hitSFX.Play();
+        animator.SetBool("Hit", true);
         ScoreManager.Hit();
     }
 

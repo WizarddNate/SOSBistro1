@@ -9,6 +9,9 @@ public class Note : MonoBehaviour
     //time that the note needs to be played by the player
     public float assignedTime;
 
+    //reference pulse script
+    public Pulse pulse;
+
     void Start()
     {
         timeInstantiated = SongManager.GetAudioSourceTime();
@@ -28,6 +31,7 @@ public class Note : MonoBehaviour
         {
             transform.localPosition = Vector3.Lerp(Vector3.up * SongManager.Instance.noteSpawnY, Vector3.up * SongManager.Instance.noteDespawnY, t);
             GetComponent<SpriteRenderer>().enabled = true;
+            //pulse.Schmovement();
         }
     }
 }

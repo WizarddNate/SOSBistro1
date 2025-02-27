@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: abca0160be3361e47b9044271a7d49ca
+guid: 5cb8d56af106dc24c9b04ead9483c537
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8020143640844766479
-    second: spritesheet_0
+      213: 958732985008782391
+    second: WhiskersChop_SpriteSheet_2_0
   - first:
-      213: -6251682230944352461
-    second: spritesheet_1
+      213: 8929143758073670806
+    second: WhiskersChop_SpriteSheet_2_1
   - first:
-      213: -1259408508766424310
-    second: spritesheet_2
+      213: 6476699495392638562
+    second: WhiskersChop_SpriteSheet_2_2
   - first:
-      213: -5962389079421231736
-    second: spritesheet_3
+      213: -7484256700388443650
+    second: WhiskersChop_SpriteSheet_2_3
   - first:
-      213: 2788568348960109317
-    second: spritesheet_4
+      213: -2836815779454768081
+    second: WhiskersChop_SpriteSheet_2_4
   - first:
-      213: 226702753830753226
-    second: spritesheet_5
+      213: -6794240600118887757
+    second: WhiskersChop_SpriteSheet_2_5
   - first:
-      213: -7921052967969465774
-    second: spritesheet_6
+      213: 4325456900556084144
+    second: WhiskersChop_SpriteSheet_2_6
   - first:
-      213: -1370661682523340017
-    second: spritesheet_7
+      213: 7170901219460371670
+    second: WhiskersChop_SpriteSheet_2_7
   - first:
-      213: -8276262488406422588
-    second: spritesheet_8
+      213: -7788905938654205279
+    second: WhiskersChop_SpriteSheet_2_8
   - first:
-      213: -5906973516983679737
-    second: spritesheet_9
+      213: 8875207176538725189
+    second: WhiskersChop_SpriteSheet_2_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,11 +123,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_0
+      name: WhiskersChop_SpriteSheet_2_0
       rect:
         serializedVersion: 2
         x: 534
@@ -142,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0d092816264d4f60800000000000000
-      internalID: 8020143640844766479
+      spriteID: 73cf5edf19a1e4d00800000000000000
+      internalID: 958732985008782391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_1
+      name: WhiskersChop_SpriteSheet_2_1
       rect:
         serializedVersion: 2
         x: 2454
@@ -164,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 337b0ff32209d39a0800000000000000
-      internalID: -6251682230944352461
+      spriteID: 69ca06870f0baeb70800000000000000
+      internalID: 8929143758073670806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_2
+      name: WhiskersChop_SpriteSheet_2_2
       rect:
         serializedVersion: 2
         x: 4374
@@ -186,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a037fd742aea58ee0800000000000000
-      internalID: -1259408508766424310
+      spriteID: 26674d340ebd1e950800000000000000
+      internalID: 6476699495392638562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_3
+      name: WhiskersChop_SpriteSheet_2_3
       rect:
         serializedVersion: 2
         x: 6277
@@ -208,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88ddd6ce8b6514da0800000000000000
-      internalID: -5962389079421231736
+      spriteID: ef9728d2f24922890800000000000000
+      internalID: -7484256700388443650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_4
+      name: WhiskersChop_SpriteSheet_2_4
       rect:
         serializedVersion: 2
         x: 8214
@@ -230,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5033aaf832cf2b620800000000000000
-      internalID: 2788568348960109317
+      spriteID: f2c2064241b91a8d0800000000000000
+      internalID: -2836815779454768081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_5
+      name: WhiskersChop_SpriteSheet_2_5
       rect:
         serializedVersion: 2
         x: 10134
@@ -252,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac35fa714f8652300800000000000000
-      internalID: 226702753830753226
+      spriteID: 3ba706feb2206b1a0800000000000000
+      internalID: -6794240600118887757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_6
+      name: WhiskersChop_SpriteSheet_2_6
       rect:
         serializedVersion: 2
         x: 12054
@@ -274,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25a502d0b44c21290800000000000000
-      internalID: -7921052967969465774
+      spriteID: 0b358e0422c170c30800000000000000
+      internalID: 4325456900556084144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_7
+      name: WhiskersChop_SpriteSheet_2_7
       rect:
         serializedVersion: 2
         x: 13974
@@ -296,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0305f9367e6afce0800000000000000
-      internalID: -1370661682523340017
+      spriteID: 6d4d9518aa8248360800000000000000
+      internalID: 7170901219460371670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_8
+      name: WhiskersChop_SpriteSheet_2_8
       rect:
         serializedVersion: 2
         x: 15894
@@ -318,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cb05a6cd1fc42d80800000000000000
-      internalID: -8276262488406422588
+      spriteID: 1aae591f05f38e390800000000000000
+      internalID: -7788905938654205279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_9
+      name: WhiskersChop_SpriteSheet_2_9
       rect:
         serializedVersion: 2
         x: 17814
@@ -340,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7054c8ef1e6360ea0800000000000000
-      internalID: -5906973516983679737
+      spriteID: 54b969977e11b2b70800000000000000
+      internalID: 8875207176538725189
       vertices: []
       indices: 
       edges: []
@@ -359,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WhiskersChop_SpriteSheet_2_0: 958732985008782391
+      WhiskersChop_SpriteSheet_2_1: 8929143758073670806
+      WhiskersChop_SpriteSheet_2_2: 6476699495392638562
+      WhiskersChop_SpriteSheet_2_3: -7484256700388443650
+      WhiskersChop_SpriteSheet_2_4: -2836815779454768081
+      WhiskersChop_SpriteSheet_2_5: -6794240600118887757
+      WhiskersChop_SpriteSheet_2_6: 4325456900556084144
+      WhiskersChop_SpriteSheet_2_7: 7170901219460371670
+      WhiskersChop_SpriteSheet_2_8: -7788905938654205279
+      WhiskersChop_SpriteSheet_2_9: 8875207176538725189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
