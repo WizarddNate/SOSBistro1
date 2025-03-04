@@ -108,8 +108,10 @@ public class Lane : MonoBehaviour
     {
         //Debug.Log($"Hit on {inputIndex} note");
         hitSFX.Play();
-        animator.SetBool("Hit", true);
         ScoreManager.Hit();
+        //animator.SetBool("Hit", true);
+        //animator.SetBool("Hit", false);
+        animator.SetTrigger("Hit");
     }
 
     private void Miss()

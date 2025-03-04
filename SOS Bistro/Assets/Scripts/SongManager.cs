@@ -60,6 +60,7 @@ public class SongManager : MonoBehaviour
     {
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
+        //StartSong();
     }
 
     void Update()
