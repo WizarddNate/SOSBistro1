@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5db2cdae06aa2224583d06df9d6ca15c
+guid: 74ae68b482a434046b2fbc18c091fcb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3578506529661240299
-    second: WhiskersBeforeChop_0
+      213: -7583618266533450274
+    second: SOSBistroBGSPRITESHEET_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhiskersBeforeChop_0
+      name: SOSBistroBGSPRITESHEET_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 19200
+        height: 5400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51c30216547965ec0800000000000000
-      internalID: -3578506529661240299
+      spriteID: edd2c17cd5391c690800000000000000
+      internalID: -7583618266533450274
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WhiskersBeforeChop_0: -3578506529661240299
+      SOSBistroBGSPRITESHEET_0: -7583618266533450274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
