@@ -60,12 +60,6 @@ public class SongManager : MonoBehaviour
     {
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
-        //StartSong();
-    }
-
-    void Update()
-    {
-        //Debug.Log("hi");
     }
 
     public void GetDataFromMidi()
@@ -95,4 +89,7 @@ public class SongManager : MonoBehaviour
     {
         return (double)Instance.audioSource.timeSamples / Instance.audioSource.clip.frequency;
     }
+
+    
+
 }

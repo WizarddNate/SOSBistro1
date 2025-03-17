@@ -51,9 +51,9 @@ public class ScoreManager : MonoBehaviour
         }
 
         //update text
-        scoreText.text = score.ToString();
-        streakText.text = hitStreak.ToString();
-        comboText.text = comboMultiplier.ToString();
+        scoreText.text = ("Score: " + score.ToString());
+        streakText.text = ("Hit Streak: " + hitStreak.ToString());
+        comboText.text = ("Combo Score: X " + comboMultiplier.ToString());
     }
 
     public static void Hit()

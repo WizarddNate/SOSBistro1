@@ -40,8 +40,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2164222925
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Cats
+    uniqueID: 2905245473
+    locked: 0
+  - name: Bar
+    uniqueID: 705995789
+    locked: 0
+  - name: UI
+    uniqueID: 2972838609
     locked: 0
   - name: Note
     uniqueID: 2368073903

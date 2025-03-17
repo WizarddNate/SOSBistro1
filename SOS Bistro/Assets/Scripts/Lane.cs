@@ -32,6 +32,9 @@ public class Lane : MonoBehaviour
     //animate kitty cat
     public Animator animator;
 
+    //pause menu script 
+    PauseMenu pauseMenu;
+
 
     public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] notesArray)
     {
@@ -60,11 +63,6 @@ public class Lane : MonoBehaviour
                 //assign tap time to note
                 note.GetComponent<Note>().assignedTime = (float)timestamps[spawnIndex];
                 spawnIndex++;
-            }
-        //detect when song has ended 
-        if (spawnIndex >= timestamps.Count)
-            {
-                Debug.Log("Song Complete!");
             }
         }
 
@@ -120,4 +118,8 @@ public class Lane : MonoBehaviour
         ScoreManager.Miss();
     }
 
+    public void EndSong()
+    {
+        pauseMenu.Pause();
+    }
 }

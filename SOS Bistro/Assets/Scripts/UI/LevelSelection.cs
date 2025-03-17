@@ -22,7 +22,7 @@ public class LevelSelection : MonoBehaviour
     // Update is called once per frame
     public void LoadScene()
     {
-        SceneManager.LoadScene("Level " + level.ToString());
+        SceneManager.LoadScene("Level" + level.ToString());
         
     }
 }
