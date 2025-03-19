@@ -24,8 +24,4 @@ public class SongTimer : MonoBehaviour
             Debug.Log("Song over!!!!!");
         }
     }
-
-    //get audio length
-    //make a timer counting down from song length IN SECONDS
-    //when timer is up, display win screen menu! Easy peasy ^_^
 }

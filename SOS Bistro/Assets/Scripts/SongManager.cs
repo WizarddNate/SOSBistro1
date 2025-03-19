@@ -51,6 +51,14 @@ public class SongManager : MonoBehaviour
     //where MIDI will load once parsed
     public static MidiFile midiFile;
 
+    //time of the song
+    float songTime;
+
+    //pause menu script
+    public UIManager buttons;
+
+    /// //////// ///
+
     void Awake()
     {
         Instance = this;
@@ -58,8 +66,22 @@ public class SongManager : MonoBehaviour
 
     void Start()
     {
+        songTime = audioSource.clip.length;
+        Debug.Log("Audio clip length : " + songTime);
+
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
+    }
+    void Update()
+    {
+        //count down song time
+        songTime -= Time.deltaTime;
+
+        if (songTime <= 0)
+        {
+            Debug.Log("Song over!!!!!");
+            buttons.GameOver();
+        }
     }
 
     public void GetDataFromMidi()

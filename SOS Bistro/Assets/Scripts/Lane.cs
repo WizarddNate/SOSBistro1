@@ -32,9 +32,6 @@ public class Lane : MonoBehaviour
     //animate kitty cat
     public Animator animator;
 
-    //pause menu script 
-    PauseMenu pauseMenu;
-
 
     public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] notesArray)
     {
@@ -116,10 +113,5 @@ public class Lane : MonoBehaviour
     {
         Debug.Log($"Missed {inputIndex} note in lane {name}");
         ScoreManager.Miss();
-    }
-
-    public void EndSong()
-    {
-        pauseMenu.Pause();
     }
 }
