@@ -27,7 +27,7 @@ public class UIManager : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Level Selection");
+        SceneManager.LoadScene("LevelSelection");
     }
     public void Resume()
     {
@@ -51,5 +51,10 @@ public class UIManager : MonoBehaviour
     {
         ScoreManager.SetActive(false);
         GameOverPopup.SetActive(true);
+    }
+
+    public void NextLevel()
+    {
+        Debug.Log("Next Level"); //CREATE FUNCTION
     }
 }
