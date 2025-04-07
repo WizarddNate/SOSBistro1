@@ -3,6 +3,7 @@ using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Lane : MonoBehaviour
@@ -30,8 +31,11 @@ public class Lane : MonoBehaviour
     int inputIndex = 0;
 
     //animate kitty cat
-    public Animator animator;
+    public Animator catAnimator;
+    //animate text
+    public Animator textAnimator;
 
+    public TMP_Text accuracyText;
 
     public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] notesArray)
     {
@@ -77,6 +81,23 @@ public class Lane : MonoBehaviour
                 //check if player hit within margin of error
                 if (Math.Abs(audioTime - timestamp) < marginOfError)
                 {
+                    if (Math.Abs(audioTime - timestamp) < (marginOfError / 8))
+                    {
+                        accuracyText.text = ("Perfect!");
+                    }
+                    else if (Math.Abs(audioTime - timestamp) < (marginOfError / 4))
+                    {
+                        accuracyText.text = ("Good!");
+                    }
+                    else if (Math.Abs(audioTime - timestamp) < (marginOfError / 2))
+                    {
+                        accuracyText.text = ("OK!"); ;
+                    }
+                    else if (Math.Abs(audioTime - timestamp) < (marginOfError))
+                    {
+                        accuracyText.text = ("Barely!");
+                    }
+
                     //hit that note!!!
                     Hit();
                     //Debug.Log($"Input index: {inputIndex}");
@@ -104,14 +125,14 @@ public class Lane : MonoBehaviour
         //Debug.Log($"Hit on {inputIndex} note");
         hitSFX.Play();
         ScoreManager.Hit();
-        //animator.SetBool("Hit", true);
-        //animator.SetBool("Hit", false);
-        animator.SetTrigger("Hit");
+        catAnimator.SetTrigger("Hit");
+        textAnimator.SetTrigger("Hit");
     }
 
     private void Miss()
     {
         Debug.Log($"Missed {inputIndex} note in lane {name}");
         ScoreManager.Miss();
+        accuracyText.text = ("Miss!");
     }
 }

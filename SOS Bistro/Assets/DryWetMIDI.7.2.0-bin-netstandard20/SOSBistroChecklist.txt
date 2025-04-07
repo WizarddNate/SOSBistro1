@@ -1,0 +1,31 @@
+ 
+Main Menu ^\
+
+Working Quit Button ^\
+
+Finer tuned "perfect" "good" etc ^\
+
+Combo Score changes based off of hit accuracy 
+
+Animated Hit function
+
+All Cat animations in
+
+Final stats actually display at end of game
+
+Fix UI so it isn't tiny on build
+
+Change input keys
+
+Volume Slider
+
+Finish pause menu
+
+Finish settings menu
+
+Special effect when combo score is high
+
+Custom fonts and UI so everything is pretty!
+
+
+

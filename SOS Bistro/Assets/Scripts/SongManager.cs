@@ -56,6 +56,7 @@ public class SongManager : MonoBehaviour
 
     //pause menu script
     public UIManager buttons;
+    private bool gameOverCalled = false;
 
     /// //////// ///
 
@@ -71,16 +72,21 @@ public class SongManager : MonoBehaviour
 
         midiFile = MidiFile.Read(Application.streamingAssetsPath + "/" + fileLocation);
         GetDataFromMidi();
+
+        gameOverCalled = false;
+
     }
     void Update()
     {
         //count down song time
         songTime -= Time.deltaTime;
 
+
         if (songTime <= 0)
         {
             Debug.Log("Song over!!!!!");
             buttons.GameOver();
+            //gameOverCalled = true;
         }
     }
 

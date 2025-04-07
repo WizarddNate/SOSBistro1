@@ -27,8 +27,14 @@ public class UIManager : MonoBehaviour
 
     public void MainMenu()
     {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LevelSelect()
+    {
         SceneManager.LoadScene("LevelSelection");
     }
+
     public void Resume()
     {
         PauseMenu.SetActive(false);
@@ -45,6 +51,16 @@ public class UIManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void SettingsOpen()
+    {
+        Debug.Log("settings open!");
+    }
+
+    public void SettingsClose()
+    {
+        Debug.Log("settings closed!");
     }
 
     public void GameOver()
