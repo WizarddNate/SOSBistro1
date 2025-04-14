@@ -9,6 +9,8 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
     public AudioSource missSFX;
 
+    private Lane lane;
+
     //points score
     static int score;
     public TMP_Text scoreText;
@@ -21,6 +23,10 @@ public class ScoreManager : MonoBehaviour
     static int comboMultiplier;
     public TMP_Text comboText;
 
+    //score accuracy (found in lane)
+    [SerializeField]
+    Lane[] lanes;
+    private string _accuracy;
 
     void Start()
     {
@@ -37,15 +43,15 @@ public class ScoreManager : MonoBehaviour
         {
             comboMultiplier = 0;
         }
-        if (hitStreak == 3)
+        if (hitStreak == 2)
         {
             comboMultiplier = 2;
         }
-        if (hitStreak == 6)
+        if (hitStreak == 9)
         {
             comboMultiplier = 3;
         }
-        if (hitStreak == 9)
+        if (hitStreak == 16)
         {
             comboMultiplier = 4;
         }
@@ -56,13 +62,42 @@ public class ScoreManager : MonoBehaviour
         comboText.text = ("Combo Score: X " + comboMultiplier.ToString());
     }
 
-    public static void Hit()
+    public void Hit()
     {
         hitStreak += 1;
-        score = score + (10 * comboMultiplier);
+
+        for (int i = 0; i < lanes.Length; i++)
+        {
+            _accuracy = lanes[i].accuracy;
+            Debug.Log(_accuracy);
+
+            switch (_accuracy) 
+            {
+                case "Perfect!":
+                    score = score + (10 *comboMultiplier);
+                    break;
+
+                case "Good!":
+                    score = score + (8 * comboMultiplier);
+                    break;
+
+                case "OK!":
+                    score = score + (4 * comboMultiplier);
+                    break;
+
+                case "Barely!" :
+                    score = score + (2 * comboMultiplier);
+                    break;
+
+                default:
+                    score = score + (0 * comboMultiplier);
+                    break;
+
+            }
+        }
     }
 
-    public static void Miss()
+    public void Miss()
     {
         hitStreak = 0;
         Instance.missSFX.Play();

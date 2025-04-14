@@ -14,6 +14,9 @@ public class Lane : MonoBehaviour
     //key input for this specific lane
     public KeyCode input;
 
+    //score manager script 
+    public ScoreManager scoreManager;
+
     //prefab of the note to be spawned it
     public GameObject notePrefab;
 
@@ -34,7 +37,8 @@ public class Lane : MonoBehaviour
     public Animator catAnimator;
     //animate text
     public Animator textAnimator;
-
+    //update text
+    public string accuracy;
     public TMP_Text accuracyText;
 
     public void SetTimestamps(Melanchall.DryWetMidi.Interaction.Note[] notesArray)
@@ -83,21 +87,22 @@ public class Lane : MonoBehaviour
                 {
                     if (Math.Abs(audioTime - timestamp) < (marginOfError / 8))
                     {
-                        accuracyText.text = ("Perfect!");
+                        accuracy = "Perfect!";
                     }
                     else if (Math.Abs(audioTime - timestamp) < (marginOfError / 4))
                     {
-                        accuracyText.text = ("Good!");
+                        accuracy = "Good!";
                     }
                     else if (Math.Abs(audioTime - timestamp) < (marginOfError / 2))
                     {
-                        accuracyText.text = ("OK!"); ;
+                        accuracy = "OK!";
                     }
                     else if (Math.Abs(audioTime - timestamp) < (marginOfError))
                     {
-                        accuracyText.text = ("Barely!");
+                        accuracy = "Barely!";
                     }
 
+                    accuracyText.text = (accuracy);
                     //hit that note!!!
                     Hit();
                     //Debug.Log($"Input index: {inputIndex}");
@@ -109,11 +114,12 @@ public class Lane : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timestamp)} delay");
+                    //Debug.Log($"Hit inaccurate on {inputIndex} note with {Math.Abs(audioTime - timestamp)} delay");
                 }
             }
             if (timestamp + marginOfError <= audioTime)
             {
+                accuracy = "Miss!";
                 Miss();
                 inputIndex++;
             }
@@ -124,15 +130,15 @@ public class Lane : MonoBehaviour
     {
         //Debug.Log($"Hit on {inputIndex} note");
         hitSFX.Play();
-        ScoreManager.Hit();
+        scoreManager.Hit();
         catAnimator.SetTrigger("Hit");
         textAnimator.SetTrigger("Hit");
     }
 
     private void Miss()
     {
-        Debug.Log($"Missed {inputIndex} note in lane {name}");
-        ScoreManager.Miss();
+        //Debug.Log($"Missed {inputIndex} note in lane {name}");
+        scoreManager.Miss();
         accuracyText.text = ("Miss!");
     }
 }
