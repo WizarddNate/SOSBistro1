@@ -15,13 +15,13 @@ public class SongTimer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        songTime -= Time.deltaTime;
+    //void Update()
+    //{
+    //    songTime -= Time.deltaTime;
 
-        if (songTime <= 0 )
-        {
-            Debug.Log("Song over!!!!!");
-        }
-    }
+    //    if (songTime <= -2 )
+    //    {
+    //        Debug.Log("Song over!!!!!");
+    //    }
+    //}
 }

@@ -6,6 +6,7 @@ using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
 using System.IO;
 using UnityEngine.Networking;
+using System.Linq;
 
 public class SongManager : MonoBehaviour
 {
@@ -25,6 +26,10 @@ public class SongManager : MonoBehaviour
 
     //name for where the MIDI file is kept
     public string fileLocation;
+
+    //how many notes that there are in the song
+    public int maxNotes { get; private set; }
+    public int maxScore { get; private set; }
 
     //how long the note will be on the screen
     public float noteTime;
@@ -81,12 +86,11 @@ public class SongManager : MonoBehaviour
         //count down song time
         songTime -= Time.deltaTime;
 
-
-        if (songTime <= 0)
+        //end song
+        if (songTime <= -2)
         {
-            Debug.Log("Song over!!!!!");
+            //song oval!
             buttons.GameOver();
-            //gameOverCalled = true;
         }
     }
 
@@ -97,6 +101,9 @@ public class SongManager : MonoBehaviour
         var notes = midiFile.GetNotes();
         //make into array
         var notesArray = new Melanchall.DryWetMidi.Interaction.Note[notes.Count];
+
+        maxNotes = notesArray.Count();
+        maxScore = (maxNotes * 10) * 5;
 
         //copy notes into above array. 
         notes.CopyTo(notesArray, 0);
