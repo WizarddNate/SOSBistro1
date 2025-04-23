@@ -233,15 +233,15 @@ PrefabInstance:
       objectReference: {fileID: 784642355}
     - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: noteTime
-      value: 1.2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: fileLocation
-      value: lvl2redone.mid
+      value: LVL2.mid
       objectReference: {fileID: 0}
     - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: songDelayInSeconds
-      value: 1.2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 2072931817302422632, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_AnchorMax.y
@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2158344992657879617, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: noteRestriction
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2407502400866741094, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_AnchorMax.y
@@ -353,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5864988921970377373, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: noteRestriction
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6328230905004387476, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_AnchorMax.y
@@ -422,10 +422,10 @@ PrefabInstance:
     - target: {fileID: 7481152063365025491, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: catAnimator
       value: 
-      objectReference: {fileID: 2052537908}
+      objectReference: {fileID: 1250642202}
     - target: {fileID: 7481152063365025491, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: noteRestriction
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7701537349351755269, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_AnchorMax.y
@@ -478,14 +478,14 @@ PrefabInstance:
     - target: {fileID: 7959901644691251871, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 968aed638dc161247abb1da1d79a3d91, type: 3}
+      objectReference: {fileID: 8300000, guid: cfe55c6a18cf634499cf6a6631ebd713, type: 3}
     - target: {fileID: 7959901644691251871, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 968aed638dc161247abb1da1d79a3d91, type: 3}
+      objectReference: {fileID: 8300000, guid: cfe55c6a18cf634499cf6a6631ebd713, type: 3}
     - target: {fileID: 8245615442443090396, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: noteRestriction
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8375006474604188576, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_Name
@@ -599,6 +599,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b677e454069066c40a473e2df01661ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1250642202 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5049695193015253065, guid: 04815ade039919e429b14ffe46277388, type: 3}
+  m_PrefabInstance: {fileID: 125629758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1274742843 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8682167430547570448, guid: 04815ade039919e429b14ffe46277388, type: 3}
@@ -621,11 +626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b677e454069066c40a473e2df01661ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2052537908 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 120139045892548342, guid: 04815ade039919e429b14ffe46277388, type: 3}
-  m_PrefabInstance: {fileID: 125629758}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

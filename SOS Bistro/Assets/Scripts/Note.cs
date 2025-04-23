@@ -12,6 +12,9 @@ public class Note : MonoBehaviour
     //reference pulse script
     public Pulse pulse;
 
+    //note animation
+    public Animator animator;
+
     void Start()
     {
         timeInstantiated = SongManager.GetAudioSourceTime();
@@ -25,10 +28,12 @@ public class Note : MonoBehaviour
 
         if (t >= 1)
         {
+            //animator.SetTrigger("Hit");
             Destroy(gameObject);
         }
         else
         {
+            animator.SetTrigger("Hit");
             transform.localPosition = Vector3.Lerp(Vector3.up * SongManager.Instance.noteSpawnY, Vector3.up * SongManager.Instance.noteDespawnY, t);
             GetComponent<SpriteRenderer>().enabled = true;
             //pulse.Schmovement();

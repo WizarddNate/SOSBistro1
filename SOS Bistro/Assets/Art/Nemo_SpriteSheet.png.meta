@@ -129,6 +129,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nemo_SpriteSheet_0: -6984136466704387637
+      Nemo_SpriteSheet_1: 8831922382133249326
+      Nemo_SpriteSheet_10: 1063360351623831587
+      Nemo_SpriteSheet_11: -6175586904125313971
+      Nemo_SpriteSheet_2: -5107780362713479786
+      Nemo_SpriteSheet_3: 456424546886637733
+      Nemo_SpriteSheet_4: -6105293090028436358
+      Nemo_SpriteSheet_5: -1290293140560548911
+      Nemo_SpriteSheet_6: -3523817316473924052
+      Nemo_SpriteSheet_7: -185549823757085942
+      Nemo_SpriteSheet_8: 6550157328058464379
+      Nemo_SpriteSheet_9: 8953194297469892602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

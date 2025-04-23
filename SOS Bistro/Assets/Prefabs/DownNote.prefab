@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assignedTime: 0
   pulse: {fileID: 0}
+  animator: {fileID: 682294847846123323}
 --- !u!95 &682294847846123323
 Animator:
   serializedVersion: 7

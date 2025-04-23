@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -63.685
       objectReference: {fileID: 0}
+    - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: fileLocation
+      value: LVL1.mid
+      objectReference: {fileID: 0}
     - target: {fileID: 2072931817302422632, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -453,6 +457,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -20.11
       objectReference: {fileID: 0}
+    - target: {fileID: 7959901644691251871, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 46bd13409431b194c87af251bce570da, type: 3}
+    - target: {fileID: 7959901644691251871, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 46bd13409431b194c87af251bce570da, type: 3}
     - target: {fileID: 8245615442443090396, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: catAnimator
       value: 
