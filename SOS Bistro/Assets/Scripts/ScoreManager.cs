@@ -115,7 +115,4 @@ public class ScoreManager : MonoBehaviour
         Instance.missSFX.Play();
     }
 
-
-
-
 }

@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text passOrFail;
     public TMP_Text notesHit;
     public TMP_Text longestStreak;
+    public int level;
 
     //bool isPaused = false
 
@@ -38,12 +39,14 @@ public class UIManager : MonoBehaviour
 
     public void Pause()
     {
+        ScoreManager.SetActive(false);
         PauseMenu.SetActive(true);
         Time.timeScale = 0;
         AudioListener.pause = true;
     }
     public void Resume()
     {
+        ScoreManager.SetActive(true);
         PauseMenu.SetActive(false);
         Time.timeScale = 1;
         AudioListener.pause = false;
@@ -51,6 +54,7 @@ public class UIManager : MonoBehaviour
 
     public void MainMenu()
     {
+        ScoreManager.SetActive(true);
         PauseMenu.SetActive(false);
         Time.timeScale = 1;
         AudioListener.pause = false;
@@ -65,6 +69,7 @@ public class UIManager : MonoBehaviour
 
     public void Restart()
     {
+        ScoreManager.SetActive(true);
         PauseMenu.SetActive(false);
         Time.timeScale = 1;
         AudioListener.pause = false;
@@ -150,6 +155,19 @@ public class UIManager : MonoBehaviour
 
     public void NextLevel()
     {
-        Debug.Log("Next Level"); //CREATE FUNCTION
+        level = level + 1;
+
+        ScoreManager.SetActive(true);
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        AudioListener.pause = false;
+
+        if (level == 7)
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
+        SceneManager.LoadScene("Level" + level.ToString());
+
+
     }
 }

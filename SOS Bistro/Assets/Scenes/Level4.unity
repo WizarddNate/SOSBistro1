@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseLevelComponents
       objectReference: {fileID: 0}
+    - target: {fileID: 8883996540044290983, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: level
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

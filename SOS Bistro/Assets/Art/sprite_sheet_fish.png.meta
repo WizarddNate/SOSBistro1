@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: 0ff14071480d1f54b85840e89bbf6d60
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5304855957833570340
+    second: sprite_sheet_fish_0
+  - first:
+      213: 504335775460999560
+    second: sprite_sheet_fish_1
+  - first:
+      213: 6159061677691887132
+    second: sprite_sheet_fish_2
+  - first:
+      213: 6967592284593439055
+    second: sprite_sheet_fish_3
+  - first:
+      213: -5695055346068085278
+    second: sprite_sheet_fish_4
+  - first:
+      213: 2967445383288979263
+    second: sprite_sheet_fish_5
+  - first:
+      213: 5798155861683028636
+    second: sprite_sheet_fish_6
+  - first:
+      213: -8816214635726045790
+    second: sprite_sheet_fish_7
+  - first:
+      213: -3253318139803077514
+    second: sprite_sheet_fish_8
+  - first:
+      213: -4570326461973728688
+    second: sprite_sheet_fish_9
+  - first:
+      213: -305787933324354425
+    second: sprite_sheet_fish_10
+  - first:
+      213: -3706904639796084334
+    second: sprite_sheet_fish_11
+  - first:
+      213: -5975466300442228801
+    second: sprite_sheet_fish_12
+  - first:
+      213: 35327573074476696
+    second: sprite_sheet_fish_13
+  - first:
+      213: -8306240866588697522
+    second: sprite_sheet_fish_14
+  - first:
+      213: 7922877302320635426
+    second: sprite_sheet_fish_15
+  - first:
+      213: -3343827906435120987
+    second: sprite_sheet_fish_16
+  - first:
+      213: 1483415071575369868
+    second: sprite_sheet_fish_17
+  - first:
+      213: 2528370082057192881
+    second: sprite_sheet_fish_18
+  - first:
+      213: -2704335374394672704
+    second: sprite_sheet_fish_19
+  - first:
+      213: 7562127050201060239
+    second: sprite_sheet_fish_20
+  - first:
+      213: -3875290906996647220
+    second: sprite_sheet_fish_21
+  - first:
+      213: -3484336098656743468
+    second: sprite_sheet_fish_22
+  - first:
+      213: -2197482606741224367
+    second: sprite_sheet_fish_23
+  - first:
+      213: 6877189677065796063
+    second: sprite_sheet_fish_24
+  - first:
+      213: -4243380638532623217
+    second: sprite_sheet_fish_25
+  - first:
+      213: -249120376371719158
+    second: sprite_sheet_fish_26
+  - first:
+      213: 1617036202557494386
+    second: sprite_sheet_fish_27
+  - first:
+      213: 9051591599425856883
+    second: sprite_sheet_fish_28
+  - first:
+      213: -8093067859397300412
+    second: sprite_sheet_fish_29
+  - first:
+      213: 1751631712212273075
+    second: sprite_sheet_fish_30
+  - first:
+      213: -2205174881864268640
+    second: sprite_sheet_fish_31
+  - first:
+      213: -7481999142053528143
+    second: sprite_sheet_fish_32
+  - first:
+      213: -5829061001205435757
+    second: sprite_sheet_fish_33
+  - first:
+      213: -7430744509589903735
+    second: sprite_sheet_fish_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_sheet_fish_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3428
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5782e378c8979654aa87d4af4c342851
+      internalID: -1523519725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_1
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3428
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa6a1eccc297794092ce41aa81aacde
+      internalID: 1127592715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_2
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 3428
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d596fb9888132a743a431063310b0136
+      internalID: -1378360747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_3
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 3428
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bfc817989f1da41b1c348543bac7e5
+      internalID: -181461281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_4
+      rect:
+        serializedVersion: 2
+        x: 4520
+        y: 3428
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5117fb365424e644a9b33b47e08f41e3
+      internalID: -1469085240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2286
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1769646c73fb6e48a4dd6da49685344
+      internalID: 1370174406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_6
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2286
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889ef3961be38c3489b95ba2698da91c
+      internalID: 1202221039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_7
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 2286
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fc3f7ade0e5ab479e99c258b62147e
+      internalID: 552344833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_8
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 2286
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7e38ccc14fc7b41babffc37072b151
+      internalID: 1874378399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_9
+      rect:
+        serializedVersion: 2
+        x: 4520
+        y: 2286
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e473e98895a53e4e8e6cd284930639e
+      internalID: -1402674969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aec2acc32a6de144874033fa10f7b49
+      internalID: 625858064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_11
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1144
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13a5383fc598984082ca895e9cd736b
+      internalID: -522282056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_12
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 1144
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0f5479bf5043746b4ef298844be898
+      internalID: 1315184549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_13
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1144
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b813ff12edfb52d42be5165341040bad
+      internalID: -1566403849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_14
+      rect:
+        serializedVersion: 2
+        x: 4520
+        y: 1144
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c0b435955b2404dbdc43229b55e801
+      internalID: -1452552041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae6fbbf88af9944fb9d36f4e553d038
+      internalID: 1984687510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_16
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e5a89871acac148b4873ddb51cfc87
+      internalID: -658179357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_fish_17
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 2
+        width: 880
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8758a9cc905ad458eee96c41887b58
+      internalID: 3733538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3da28dd10b944f242b7a07f43c92fe96
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite_sheet_fish_0: -1523519725
+      sprite_sheet_fish_1: 1127592715
+      sprite_sheet_fish_10: 625858064
+      sprite_sheet_fish_11: -522282056
+      sprite_sheet_fish_12: 1315184549
+      sprite_sheet_fish_13: -1566403849
+      sprite_sheet_fish_14: -1452552041
+      sprite_sheet_fish_15: 1984687510
+      sprite_sheet_fish_16: -658179357
+      sprite_sheet_fish_17: 3733538
+      sprite_sheet_fish_2: -1378360747
+      sprite_sheet_fish_3: -181461281
+      sprite_sheet_fish_4: -1469085240
+      sprite_sheet_fish_5: 1370174406
+      sprite_sheet_fish_6: 1202221039
+      sprite_sheet_fish_7: 552344833
+      sprite_sheet_fish_8: 1874378399
+      sprite_sheet_fish_9: -1402674969
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

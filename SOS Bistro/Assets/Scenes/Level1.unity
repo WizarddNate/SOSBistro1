@@ -214,8 +214,16 @@ PrefabInstance:
       value: -63.685
       objectReference: {fileID: 0}
     - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: noteTime
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: fileLocation
       value: LVL1.mid
+      objectReference: {fileID: 0}
+    - target: {fileID: 1806579135297846023, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: songDelayInSeconds
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2072931817302422632, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_AnchorMax.y
@@ -484,6 +492,10 @@ PrefabInstance:
     - target: {fileID: 8387265570002593380, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_fontSizeBase
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883996540044290983, guid: 04815ade039919e429b14ffe46277388, type: 3}
+      propertyPath: level
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9092791259443440268, guid: 04815ade039919e429b14ffe46277388, type: 3}
       propertyPath: m_Color.b

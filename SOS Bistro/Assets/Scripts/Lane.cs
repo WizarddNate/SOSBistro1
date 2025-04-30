@@ -1,4 +1,5 @@
 using Melanchall.DryWetMidi.Interaction;
+using Melanchall.DryWetMidi.MusicTheory;
 using NUnit.Framework;
 using System;
 using System.Collections;
@@ -107,8 +108,9 @@ public class Lane : MonoBehaviour
                     Hit();
                     //Debug.Log($"Input index: {inputIndex}");
 
-                    //destory note
-                    Destroy(notes[inputIndex].gameObject);
+                    //destroy note
+                    notes[inputIndex].gameObject.GetComponent<Note>().DestroyAnimation();
+                    //Destroy(notes[inputIndex].gameObject);
                     inputIndex++;
                     return;
                 }
